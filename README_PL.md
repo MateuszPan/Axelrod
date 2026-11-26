@@ -39,6 +39,12 @@ python -m venv .venv
 
 Dane znajdują się w `data/table2/` i `data/figure2/`, a wykresy w `plots/table2/` i `plots/figure2/`. Kod modelu znajduje się w `model.py`, a testy w `tests/`. Stałe ziarna losowania umożliwiają odtwarzanie wyników. Wartości z oryginalnego rysunku 2 odczytano w przybliżeniu.
 
+## Weryfikacja modelu
+
+Poprawność modelu sprawdziliśmy za pomocą 17 testów, obejmujących m.in. interakcje agentów, wykrywanie stabilności i liczenie regionów. Jako test graniczny wykorzystaliśmy siatkę 3 × 3 z identycznymi agentami. W takim przypadku symulacja powinna zakończyć się natychmiast, bez żadnych prób interakcji i zmian kulturowych. Test potwierdził takie zachowanie.
+
+Sprawdziliśmy również, czy zwykła i zoptymalizowana wersja modelu dają identyczne wyniki dla tych samych ziaren losowania.
+
 ## Źródło
 
 Axelrod, R. (1997). *The Dissemination of Culture: A Model with Local Convergence and Global Polarization*. Journal of Conflict Resolution, 41 (2), 203–226. https://doi.org/10.1177/0022002797041002001
