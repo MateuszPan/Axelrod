@@ -36,6 +36,12 @@ Figure 2: 380 runs with `F=5`, `q=15` and grid sizes from 2 × 2 to 100 × 100. 
 
 CSV files are in `data/`, and plots are in `plots/`. The model is in `model.py`, with tests in `tests/`. Fixed random seeds are used. Values from Axelrod's Figure 2 are approximate readings of the published graph.
 
+## Model Verification
+
+We verified the correctness of the model using 17 tests covering, among other things, agent interactions, stability detection, and region counting. As a boundary test, we used a 3 × 3 grid with identical agents. In this case, the simulation should terminate immediately, without any interaction attempts or cultural changes. The test confirmed this behavior.
+
+We also checked whether the original and optimized versions of the model produce identical results when using the same random seeds.
+
 ## Reference
 
 Axelrod, R. (1997). The Dissemination of Culture: A Model with Local Convergence and Global Polarization. *Journal of Conflict Resolution, 41*(2), 203–226. https://doi.org/10.1177/0022002797041002001
